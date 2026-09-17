@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#mw {
+  font-size: 200%;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  background-color: antiquewhite;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bolder;
+  color: rgb(18, 31, 31);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: rgb(32, 181, 134);
+  transform: scale(1.2);
+}
+#Marian {
+  width: 100%;
+  height: 80vh;
+  color: aliceblue;
+  
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../imagenes/fotoprogramacion.jpg");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+h1{
+    font-size: 4rem;
+}
