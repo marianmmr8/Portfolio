@@ -1,3 +1,18 @@
+/* El asterisco es para decir esto es así  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* el root son variables, aquí se meten todas las cosas que se repitan y sea mas facil de cambiar , como puede ser el color principal.. */
+:root {
+  --color-principal: black;
+}
+/* este html scroll es para que en la pagina se baje escroleando no directamente */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -42,6 +57,20 @@ nav a:hover {
 h1 {
   font-size: 4rem;
 }
+/* esto sirve para que la web se adpate a la pantalla */
+/* esto es una regla para tablet */
+@media (max-width: 1024px){
+h1{
+  font-size: 3rem;
+}
+}
+/* esto es una regla para el movil */
+@media (max-width: 768px){
+h1{
+font-size: 2rem;
+}
+
+}
 #ceo {
   padding: 5px;
   background-color: aqua;
@@ -63,6 +92,16 @@ h1 {
   grid-auto-rows: 1fr;
   gap: 2%;
 }
+@media (max-width: 1024px){
+  #trabajos {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px){
+  #trabajos {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
 .tarjeta-trabajo img {
   width: 100%;
 }
@@ -78,4 +117,35 @@ h1 {
 .texto-tarjeta {
   padding: 2%;
   text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.texto-tarjeta button {
+  margin-top: auto;
+}
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(241, 194, 135);
+  border-radius: 8px;
+}
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.footer-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
