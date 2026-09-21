@@ -11,10 +11,12 @@
   --color-terciario:rgb(229, 229, 220);
   --color-tarjeta:aliceblue;
   --color-transicion:rgb(32, 181, 134);
+  --font-secundaria: "Original Surfer", sans-serif;
 }
 /* este html scroll es para que en la pagina se baje escroleando no directamente */
 html {
   scroll-behavior: smooth;
+  
 }
 
 header {
@@ -31,6 +33,8 @@ header {
   border-radius: 50%;
   padding: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: var(--font-secundaria);
+  }
 /* con esto hemos puesto arriba a la derecha las palabras le damos forma y su transicion  */
 nav a {
   text-decoration: none;
@@ -49,7 +53,6 @@ nav a:hover {
   width: 100%;
   height: 80vh;
   color: aliceblue;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../imagenes/fotoprogramacion.jpg");
@@ -61,6 +64,11 @@ nav a:hover {
 
 h1 {
   font-size: 4rem;
+  font-family: var(--font-secundaria);
+  
+}
+h2 {
+  font-family: var(--font-secundaria);
 }
 /* esto sirve para que la web se adpate a la pantalla */
 /* esto es una regla para tablet */
@@ -138,6 +146,7 @@ font-size: 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-secundaria);
 }
 /* con esto le damos margen al boton para que no se quede tan pegado al texto. */
 .texto-tarjeta p {
@@ -163,8 +172,9 @@ font-size: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: --color-secundario
-  border-radius: 8px;
+  background-color: var(--color-secundario);
+  border-radius:8px;
+
 }
 .footer-contacto {
   display: flex;
